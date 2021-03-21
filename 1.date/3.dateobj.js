@@ -51,8 +51,20 @@
 }
 
 {
-  //YYYY-MM-DDTHH:mm:ss.sssZ
-  //에서 sss는 milliseconds(0 to 999);
-  //끝에 Z가 붙으면, UTC TIME 끝에 Z가 붙지 않으면 LOCAL TIME.
-  //UTC란?
+  // -YYYY-MM-DDTHH:mm:ss.sssZ
+  //  에서 sss는 milliseconds(0 to 999);
+  //  끝에 Z가 붙으면, UTC TIME 끝에 Z가 붙지 않으면 LOCAL TIME.
+  // *UTC란? Univeral Time Coordination이나 Universal Time Cod 가 아니다.
+  //       GMT와 UTC는 초의 소숫점단위에서만 차이가 나기때문에 기술적으로 혼용해서 씀.
+  //       한국말로는 "협정 세계시"라고 한다.
+  //       한국은 +9 :: KST = UTC + 9 hours
+  // -- 현재 우리나라의 시간을 기준으로 다른 타임존의 시간을 알고 싶은 경우
+  // UTC, GMT는 UTC = KST - 9 hours
+  //       CEST(중부 유럽 서머타임) : UTC+2 hours
+  //       BST(영국 서머타임)     : UTC+1 hour , 한국시간에 8시간을 빼어 계산한다.
+  //       EDT(미국동부 서머타임, 예:뉴욕)   : UTC-4 hours , 한국시간에 13시간을 빼어 계산한다.
+  //       CDT(미국중부 서머타임, 예:시카고)   : UTC-5 hours , 한국시간에 14시간을 빼어 계산한다.
+  //       CST(중국표준시, 예:타이페이)  : UTC+8 hours , 한국시간에 1시간을 빼어 계산한다.
+  // -- 다른 타임존의 시간을 기준으로 우리나라 시간을 알고 싶을 경우
+  // UTC,GTM = 해당시간 + 9 hours
 }
