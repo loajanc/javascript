@@ -53,7 +53,7 @@
 {
   // -YYYY-MM-DDTHH:mm:ss.sssZ
   //  에서 sss는 milliseconds(0 to 999);
-  //  끝에 Z가 붙으면, UTC TIME 끝에 Z가 붙지 않으면 LOCAL TIME.
+  //  끝에 Z가 붙으면 UTC TIME, 끝에 Z가 붙지 않으면 LOCAL TIME.
   // *UTC란? Univeral Time Coordination이나 Universal Time Cod 가 아니다.
   //       GMT와 UTC는 초의 소숫점단위에서만 차이가 나기때문에 기술적으로 혼용해서 씀.
   //       한국말로는 "협정 세계시"라고 한다.
