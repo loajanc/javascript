@@ -115,4 +115,32 @@
 
   const regExp8 = /[A-Z]+/g;
   console.log("/[A-B]+/:", target3.match(regExp8));
+
+  const regExp9 = /[A-Za-z]/g; //A-Z Exclusive-OR a-z;
+  console.log("/[A-Za-z]/g:", target3.match(regExp9));
+
+  const regExp10 = /[A-Za-z]+/g; //(A-Z Exclusive-OR a-z)+;
+  console.log("/[A-Za-z]/g:", target3.match(regExp10));
+
+  const target4 = "AA BB 12,345";
+  const regExp11 = /[0-9]+/g;
+  console.log("/[0-9]+/g :", target4.match(regExp11));
+
+  const regExp12 = /[0-9,]+/g;
+  console.log("/[0-9,]+/g :", target4.match(regExp12));
+
+  const regExp13 = /[\d]+/g;
+  console.log("/[d,]+/g :", target4.match(regExp13));
+
+  const regExp14 = /[\d,]+/g;
+  console.log("/[d,]+/g :", target4.match(regExp14));
+
+  const regExp15 = /[\D]+/g;
+  console.log("/[D]+/g :", target4.match(regExp15));
+
+  const regExp16 = /[\w, ]+/g;
+  console.log("/[w]+/g :", target4.match(regExp16));
+
+  const regExp17 = /[^\w]+/g;
+  console.log("/[^w]+/g :", target4.match(regExp17));
 }
